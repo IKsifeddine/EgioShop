@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.4, created on 2024-04-26 17:00:19
+/* Smarty version 4.3.4, created on 2024-04-28 02:08:17
   from '/Applications/MAMP/htdocs/EgioShop/themes/EgioTheme/templates/_partials/microdata/head-jsonld.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_662bc18367a6c2_26796323',
+  'unifunc' => 'content_662d93714264f2_60607448',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662bc18367a6c2_26796323 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662d93714264f2_60607448 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="application/ld+json">
   {

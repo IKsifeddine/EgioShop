@@ -9,11 +9,14 @@
 .product-price {
   display: inline-block;
   max-width: 100%;
-  color: $brand-primary;
+  color: $brand-secondary;
+  font-size:xx-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #product-description-short {
   color: $gray-darker;
+  background-color: $border-gray;
 
   ul,
   ol {
@@ -112,6 +115,8 @@
     height: 2.75rem;
     padding-top: 0.625rem;
     line-height: inherit;
+    background-color: $black;
+    width: 100%;
 
     .material-icons {
       line-height: inherit;
@@ -142,7 +147,7 @@
     width: 3rem;
     height: 2.75rem;
     padding: 0.175rem 0.5rem;
-    color: $gray-darker;
+    color: $black;
     background-color: $white;
   }
 
@@ -561,13 +566,19 @@
 .product-images {
   > li.thumb-container {
     display: inline;
+    display: flex;
 
     .thumb {
       margin-bottom: $small-space;
       cursor: pointer;
-
+      background-color: white;
+      border: solid gray 0.9;
+      
       .images-container & {
         margin-right: 0.8125rem;
+        width: 98%;
+        height: 98%;
+        display: flex;
       }
 
       &.selected,
@@ -580,13 +591,15 @@
 
 #main {
   .images-container {
+    display: flex;
     .js-qv-mask {
       overflow: hidden;
       white-space: nowrap;
-
+      
       &.scroll {
-        width: calc(100% - 60px);
-        margin: 0 auto;
+        width: 13%;
+        margin-top: 10%;
+        position: absolute;
       }
     }
   }
@@ -596,7 +609,7 @@
   display: none;
 
   &.scroll {
-    display: block;
+    display: none;
   }
 
   i {
@@ -675,8 +688,10 @@
 }
 
 .product-variants {
+  display: flex;
   > .product-variants-item {
     margin: $medium-space 0;
+    padding: 5px;
 
     select {
       width: auto;
