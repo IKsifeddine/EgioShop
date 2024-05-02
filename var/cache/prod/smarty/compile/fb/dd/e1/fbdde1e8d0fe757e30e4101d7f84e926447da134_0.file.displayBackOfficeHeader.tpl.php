@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.4, created on 2024-04-28 13:12:57
+/* Smarty version 4.3.4, created on 2024-05-02 19:09:29
   from '/Applications/MAMP/htdocs/EgioShop/modules/ps_faviconnotificationbo/views/templates/hook/displayBackOfficeHeader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_662e2f393c5fe2_91758722',
+  'unifunc' => 'content_6633c8c92809e5_04230308',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662e2f393c5fe2_91758722 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6633c8c92809e5_04230308 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
   if (undefined !== ps_faviconnotificationbo) {

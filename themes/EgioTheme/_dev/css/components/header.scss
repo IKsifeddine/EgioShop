@@ -26,8 +26,9 @@
   }
 
   .menu {
-    display: inline-block;
-
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
     > ul {
       > li {
         display: inline-block;
@@ -66,9 +67,14 @@
       margin-left: 2.5rem;
       text-align: right;
       white-space: nowrap;
+      // display: none;
 
       .account {
         margin-left: $small-space;
+        display: none;
+      }
+      .hidden-sm-down {
+        display: none;
       }
     }
 
@@ -121,6 +127,9 @@
 
       .header {
         margin-top: 0.125rem;
+      }
+      .hidden-sm-down{
+        display: none;
       }
     }
 

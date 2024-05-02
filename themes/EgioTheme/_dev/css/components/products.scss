@@ -864,10 +864,11 @@
 }
 
 .social-sharing {
-  display: flex;
+   display: flex;
   align-items: center;
   width: 100%;
   margin-top: 1.5rem;
+  display: none;
 
   ul {
     margin-bottom: 0;

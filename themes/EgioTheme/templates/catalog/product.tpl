@@ -188,6 +188,23 @@
                    {block name='product_description'}
                      <div class="product-description">{$product.description nofilter}</div>
                    {/block}
+                   {if isset($product_manufacturer->id)}
+                  
+                    <div class="product-manufacturer">
+                      {if isset($manufacturer_image_url)}
+                        <a href="{$product_brand_url}">
+                          <img src="{$manufacturer_image_url}" class="img img-fluid manufacturer-logo" alt="{$product_manufacturer->name}" loading="lazy">
+                        </a>
+                        {$product_manufacturer->description nofilter}
+                      {else}
+                        <label class="label">{l s='Brand' d='Shop.Theme.Catalog'}</label>
+                        <span>
+                          <a href="{$product_brand_url}">{$product_manufacturer->name}</a>
+                        </span>
+                      {/if}
+                    </div>
+                  {/if}
+
                  </div>
 
                  {block name='product_details'}
