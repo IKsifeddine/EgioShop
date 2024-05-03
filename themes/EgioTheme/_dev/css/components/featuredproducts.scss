@@ -1,9 +1,14 @@
 $thumbnail-size: 250px;
 $product-description-height: 70px;
+#main .product-accessories{
+
+  box-shadow: 1px -3px 7px 0 rgba(0, 0, 0, .1) !important;
+}
 
 #products,
 .featured-products,
 .product-accessories {
+  
   .products {
     display: flex;
     flex-wrap: wrap;

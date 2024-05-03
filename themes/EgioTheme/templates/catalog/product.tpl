@@ -84,6 +84,23 @@
             {block name='product_description_short'}
               <div id="product-description-short-{$product.id}" class="product-description">{$product.description_short nofilter}</div>
             {/block}
+            {block name='product_availability'}
+              <span id="product-availability" class="js-product-availability">
+                {if $product.show_availability && $product.availability_message}
+                  {if $product.availability == 'available'}
+                    <i class="material-icons rtl-no-flip product-available">&#xE5CA;</i>
+                  {elseif $product.availability == 'last_remaining_items'}
+                    <i class="material-icons product-last-items">&#xE002;</i>
+                  {else}
+                    <i class="material-icons product-unavailable">&#xE14B;</i>
+                  {/if}
+                  {$product.availability_message}
+                {/if}
+                </span>
+                <section class="ability">Expédié sous 2-3 jours ouvrès</section>
+            {/block}  
+           
+        
 
             {if $product.is_customizable && count($product.customizations.fields)}
               {block name='product_customization'}
@@ -152,7 +169,7 @@
                          {if $product.description} aria-selected="true"{/if}>{l s='Description' d='Shop.Theme.Catalog'}</a>
                     </li>
                   {/if}
-                  <li class="nav-item">
+                  {* <li class="nav-item">
                     <a
                       class="nav-link{if !$product.description} active js-product-nav-active{/if}"
                       data-toggle="tab"
@@ -160,7 +177,7 @@
                       role="tab"
                       aria-controls="product-details"
                       {if !$product.description} aria-selected="true"{/if}>{l s='Product Details' d='Shop.Theme.Catalog'}</a>
-                  </li>
+                  </li> *}
                   {if $product.attachments}
                     <li class="nav-item">
                       <a
@@ -188,6 +205,7 @@
                    {block name='product_description'}
                      <div class="product-description">{$product.description nofilter}</div>
                    {/block}
+                   
                    {if isset($product_manufacturer->id)}
                   
                     <div class="product-manufacturer">
@@ -239,6 +257,8 @@
             </div>
           {/block}
         </div>
+        
+        
       </div>
     </div>
 

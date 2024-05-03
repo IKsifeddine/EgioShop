@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.4, created on 2024-05-02 17:18:21
+/* Smarty version 4.3.4, created on 2024-05-03 11:27:50
   from 'module:productcommentsviewstemplateshookpostcommentmodal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_6633aebd2e9b11_89296219',
+  'unifunc' => 'content_6634ae169ed811_71242099',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ab78f8c8f8f941a231f6eb727d07d151a3efcbc2' => 
     array (
       0 => 'module:productcommentsviewstemplateshookpostcommentmodal.tpl',
-      1 => 1693386896,
+      1 => 1714728403,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:productcomments/views/templates/hook/alert-modal.tpl' => 2,
   ),
 ),false)) {
-function content_6633aebd2e9b11_89296219 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6634ae169ed811_71242099 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Applications/MAMP/htdocs/EgioShop/vendor/smarty/smarty/libs/plugins/modifier.count.php','function'=>'smarty_modifier_count',),));
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
@@ -52,12 +52,12 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
             <div class="col-sm-2">
               <?php if ((isset($_smarty_tpl->tpl_vars['product']->value)) && $_smarty_tpl->tpl_vars['product']->value) {?>
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1740287166633aebd2d4360_55030554', 'product_flags');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3909657576634ae169cdc10_35164181', 'product_flags');
 ?>
 
 
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15406711076633aebd2d6c86_71552162', 'product_cover');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12939930696634ae169d4815_06350042', 'product_cover');
 ?>
 
               <?php }?>
@@ -66,7 +66,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15406711076633aebd
               <p class="h3"><?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </p>
               <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5250171946633aebd2dbef6_63052340', 'product_description_short');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7632345686634ae169d9c26_73794115', 'product_description_short');
 ?>
 
             </div>
@@ -83,9 +83,7 @@ $_smarty_tpl->tpl_vars['criterion']->do_else = false;
                       <div class="criterion-rating">
                         <label><?php echo htmlspecialchars((string) call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['criterion']->value['name'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 :</label>
-                        <div
-                          class="grade-stars"
-                          data-grade="3"
+                        <div class="grade-stars" data-grade="3"
                           data-input="criterion[<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['criterion']->value['id_product_comment_criterion'], ENT_QUOTES, 'UTF-8');?>
 ]">
                         </div>
@@ -103,23 +101,27 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="row">
               <div class="col-sm-8">
                 <label class="form-label" for="comment_title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Title','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );?>
-<sup class="required">*</sup></label>
-                <input id="comment_title" name="comment_title" type="text" value=""/>
+<sup
+                    class="required">*</sup></label>
+                <input id="comment_title" name="comment_title" type="text" value="" />
               </div>
               <div class="col-sm-4">
                 <label class="form-label" for="customer_name"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your name','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );?>
-<sup class="required">*</sup></label>
-                <input id="customer_name" name="customer_name" type="text" value=""/>
+<sup
+                    class="required">*</sup></label>
+                <input id="customer_name" name="customer_name" type="text" value="" />
               </div>
             </div>
           <?php } else { ?>
             <label class="form-label" for="comment_title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Title','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );?>
-<sup class="required">*</sup></label>
-            <input id="comment_title" name="comment_title" type="text" value=""/>
+<sup
+                class="required">*</sup></label>
+            <input id="comment_title" name="comment_title" type="text" value="" />
           <?php }?>
 
           <label class="form-label" for="comment_content"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Review','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );?>
-<sup class="required">*</sup></label>
+<sup
+              class="required">*</sup></label>
           <textarea id="comment_content" name="comment_content"></textarea>
 
           <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayGDPRConsent','mod'=>'psgdpr','id_module'=>$_smarty_tpl->tpl_vars['id_module']->value),$_smarty_tpl ) );?>
@@ -150,32 +152,32 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 <?php if ($_smarty_tpl->tpl_vars['moderation_active']->value) {?>
   <?php ob_start();
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your comment has been submitted and will be available once approved by a moderator.','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );
-$_prefixVariable7 = ob_get_clean();
-$_smarty_tpl->_assignInScope('comment_posted_message', $_prefixVariable7);
+$_prefixVariable1 = ob_get_clean();
+$_smarty_tpl->_assignInScope('comment_posted_message', $_prefixVariable1);
 } else { ?>
   <?php ob_start();
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your comment has been added!','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );
-$_prefixVariable8 = ob_get_clean();
-$_smarty_tpl->_assignInScope('comment_posted_message', $_prefixVariable8);
+$_prefixVariable2 = ob_get_clean();
+$_smarty_tpl->_assignInScope('comment_posted_message', $_prefixVariable2);
 }
 ob_start();
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Review sent','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );
-$_prefixVariable9 = ob_get_clean();
-$_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/alert-modal.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('modal_id'=>'product-comment-posted-modal','modal_title'=>$_prefixVariable9,'modal_message'=>$_smarty_tpl->tpl_vars['comment_posted_message']->value), 0, false);
+$_prefixVariable3 = ob_get_clean();
+$_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/alert-modal.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('modal_id'=>'product-comment-posted-modal','modal_title'=>$_prefixVariable3,'modal_message'=>$_smarty_tpl->tpl_vars['comment_posted_message']->value), 0, false);
 ?>
 
 <?php ob_start();
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your review cannot be sent','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );
-$_prefixVariable10 = ob_get_clean();
-$_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/alert-modal.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('modal_id'=>'product-comment-post-error','modal_title'=>$_prefixVariable10,'icon'=>'error'), 0, true);
+$_prefixVariable4 = ob_get_clean();
+$_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/alert-modal.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('modal_id'=>'product-comment-post-error','modal_title'=>$_prefixVariable4,'icon'=>'error'), 0, true);
 }
 /* {block 'product_flags'} */
-class Block_1740287166633aebd2d4360_55030554 extends Smarty_Internal_Block
+class Block_3909657576634ae169cdc10_35164181 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_flags' => 
   array (
-    0 => 'Block_1740287166633aebd2d4360_55030554',
+    0 => 'Block_3909657576634ae169cdc10_35164181',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -200,12 +202,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'product_flags'} */
 /* {block 'product_cover'} */
-class Block_15406711076633aebd2d6c86_71552162 extends Smarty_Internal_Block
+class Block_12939930696634ae169d4815_06350042 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_cover' => 
   array (
-    0 => 'Block_15406711076633aebd2d6c86_71552162',
+    0 => 'Block_12939930696634ae169d4815_06350042',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -214,7 +216,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                   <div class="product-cover">
                     <?php if ($_smarty_tpl->tpl_vars['product']->value['cover']) {?>
                       <img class="js-qv-product-cover" src="<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['medium_default']['url'], ENT_QUOTES, 'UTF-8');?>
-" alt="<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
+"
+                        alt="<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
 " style="width:100%;" itemprop="image">
                     <?php } else { ?>
@@ -227,12 +230,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_cover'} */
 /* {block 'product_description_short'} */
-class Block_5250171946633aebd2dbef6_63052340 extends Smarty_Internal_Block
+class Block_7632345686634ae169d9c26_73794115 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_description_short' => 
   array (
-    0 => 'Block_5250171946633aebd2dbef6_63052340',
+    0 => 'Block_7632345686634ae169d9c26_73794115',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -10,8 +10,8 @@
   display: inline-block;
   max-width: 100%;
   color: $brand-secondary;
-  font-size:xx-large;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: xx-large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 #product-description-short {
@@ -241,6 +241,11 @@
     text-decoration: line-through;
   }
 }
+.ability {
+  position: absolute;
+  left: 20.2%;
+  top: 19.57%;
+}
 
 .has-discount {
   &.product-price,
@@ -267,6 +272,17 @@
   font-size: $font-size-xs;
   color: $gray;
   text-overflow: ellipsis;
+}
+.images-container .wishlist-button-add{
+  position: relative !important;
+  right: 13% !important ;
+  margin-top: 11px !important;
+}
+#main .images-container .js-qv-mask.scroll{
+  left: 2%;
+}
+.images-container .product-images>li.thumb-container .thumb {
+  border-radius: 5px;
 }
 
 .tabs {
@@ -573,7 +589,7 @@
       cursor: pointer;
       background-color: white;
       border: solid gray 0.9;
-      
+
       .images-container & {
         margin-right: 0.8125rem;
         width: 98%;
@@ -595,7 +611,7 @@
     .js-qv-mask {
       overflow: hidden;
       white-space: nowrap;
-      
+
       &.scroll {
         width: 13%;
         margin-top: 10%;
@@ -864,7 +880,7 @@
 }
 
 .social-sharing {
-   display: flex;
+  display: flex;
   align-items: center;
   width: 100%;
   margin-top: 1.5rem;

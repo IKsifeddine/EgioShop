@@ -16,7 +16,7 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License version 3.0
  *}
-<div
+{* <div
   class="wishlist-button"
   data-url="{$url}"
   data-product-id="{$product.id}"
@@ -25,5 +25,5 @@
   data-list-id="1"
   data-checked="true"
   data-is-product="true"
-></div>
+></div> *}
 
