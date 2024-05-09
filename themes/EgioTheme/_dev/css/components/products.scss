@@ -292,7 +292,7 @@
 .ability {
   position: absolute;
   left: 20.2%;
-  top: 19.57%;
+  top: 19.99%;
 }
 
 .has-discount {
@@ -330,6 +330,12 @@
   left: 2%;
 }
 .images-container .product-images > li.thumb-container .thumb {
+  border-radius: 5px;
+}
+.product-variants>.product-variants-item select {
+  width: auto;
+  padding-right: 1.875rem;
+  background-color: #fff;
   border-radius: 5px;
 }
 
@@ -742,7 +748,7 @@
       font-weight: 500;
       text-transform: capitalize;
       word-break: normal;
-      background: $gray-light;
+      background: #F5E8E1;
 
       &:nth-of-type(even) {
         background: $gray-lighter;
