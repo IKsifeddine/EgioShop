@@ -29,6 +29,8 @@ import 'flexibility';
 import 'bootstrap-touchspin';
 import 'jquery-touchswipe';
 import './selectors';
+import './lib/slick.min';
+
 
 import './responsive';
 import './checkout';

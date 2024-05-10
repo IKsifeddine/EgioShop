@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.4, created on 2024-05-02 18:48:33
+/* Smarty version 4.3.4, created on 2024-05-10 17:50:08
   from '/Applications/MAMP/htdocs/EgioShop/themes/EgioTheme/templates/_partials/pagination-seo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_6633c3e1ceddb5_91598691',
+  'unifunc' => 'content_663e4230583fd2_91732873',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6633c3e1ceddb5_91598691 (Smarty_Internal_Template $_smarty_tpl) {
+function content_663e4230583fd2_91732873 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Applications/MAMP/htdocs/EgioShop/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 

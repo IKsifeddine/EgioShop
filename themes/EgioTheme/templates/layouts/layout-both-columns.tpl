@@ -61,7 +61,9 @@
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
           {/block}
-
+          {if $page.page_name == 'category'}
+          {include file='catalog/_partials/category-header.tpl' listing=$listing category=$category}
+        {/if}
           <div class="row">
             {block name="left_column"}
               <div id="left-column" class="col-xs-12 col-md-4 col-lg-3">

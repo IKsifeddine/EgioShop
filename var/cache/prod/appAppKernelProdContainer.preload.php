@@ -10,7 +10,7 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).'/vendor/autoload.php';
-require __DIR__.'/ContainerMASGJR5/appAppKernelProdContainer.php';
+require __DIR__.'/ContainerQAyw0Zu/appAppKernelProdContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -2184,6 +2184,8 @@ $classes[] = 'PrestaShopBundle\EventListener\UserLocaleListener';
 $classes[] = 'PrestaShopBundle\Service\DataProvider\UserProvider';
 $classes[] = 'PrestaShopBundle\Utils\ZipManager';
 $classes[] = 'PrestaShop\PrestaShop\Core\ConstraintValidator\UniqueStateIsoCodeValidator';
+$classes[] = 'PrestaShop\Module\ProductComment\Form\ProductCommentCriterionFormDataHandler';
+$classes[] = 'PrestaShop\Module\ProductComment\Form\ProductCommentCriterionFormDataProvider';
 $classes[] = 'PrestaShop\Module\ProductComment\Repository\ProductCommentCriterionRepository';
 $classes[] = 'PrestaShop\Module\ProductComment\Repository\ProductCommentRepository';
 $classes[] = 'Symfony\Component\PropertyInfo\PropertyInfoCacheExtractor';

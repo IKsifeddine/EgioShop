@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.4, created on 2024-05-02 19:05:49
+/* Smarty version 4.3.4, created on 2024-05-10 17:50:03
   from '/Applications/MAMP/htdocs/EgioShop/admin2619qx9metmlrddx9sb/themes/new-theme/public/preload.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_6633c7edbb7465_49961240',
+  'unifunc' => 'content_663e422b4d1bb1_47753000',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6633c7edbb7465_49961240 (Smarty_Internal_Template $_smarty_tpl) {
+function content_663e422b4d1bb1_47753000 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link
       rel="preload"
       href="<?php echo $_smarty_tpl->tpl_vars['admin_dir']->value;?>
