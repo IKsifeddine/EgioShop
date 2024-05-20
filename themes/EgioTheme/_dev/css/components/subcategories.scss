@@ -35,9 +35,10 @@
 
       .subcategory-name {
         text-transform: uppercase;
+        color: black;
 
         &:hover {
-          color: $brand-primary;
+          color: coral;
         }
       }
 
@@ -49,7 +50,7 @@
         .subcategory-image {
           a {
             padding: 5px;
-            border: 5px solid $brand-primary;
+            border: 5px solid coral;
           }
         }
       }

@@ -12,12 +12,15 @@
   }
 
   .search-widgets {
+    display: contents;
     form {
+      background-color: white;
       input[type="text"] {
-        width: 100%;
+        // width: 666px;
+        height: 37px;
         min-width: inherit;
-        color: $gray-second;
-        background: $gray-lighter;
+        // color: $gray-second;
+        // background: $gray-lighter;
 
         &:focus {
           background: $white;
@@ -92,4 +95,16 @@
       max-width: 13rem;
     }
   }
+}
+
+
+.ui-autocomplete-input{
+  background-color: white;
+  text-decoration: underline;
+}
+
+.header-top #search_widget input {
+  padding-right: 1rem;
+  background-color: white;
+  // text-align: center;
 }

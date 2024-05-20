@@ -1,14 +1,12 @@
 $thumbnail-size: 250px;
 $product-description-height: 70px;
-#main .product-accessories{
-
-  box-shadow: 1px -3px 7px 0 rgba(0, 0, 0, .1) !important;
+#main .product-accessories {
+  box-shadow: 1px -3px 7px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
 #products,
 .featured-products,
 .product-accessories {
-  
   .products {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +44,8 @@ $product-description-height: 70px;
     padding: 0;
     margin: 0 0.8125rem;
 
-    @at-root .page-index &, .page-search & {
+    @at-root .page-index &,
+      .page-search & {
       width: 25%;
       min-width: 250px;
     }
@@ -57,11 +56,15 @@ $product-description-height: 70px;
   }
 
   .product-title a {
-    font-size: $font-size-sm;
-    font-weight: 400;
-    color: $gray;
-    text-align: center;
-    text-decoration: none;
+    width: 225px;
+    height: 67px;
+    text-align:left;
+    font: normal normal normal 26px/28px Oswald;
+    letter-spacing: 0px;
+    color: #212121;
+    opacity: 1;
+    font-size: larger;
+   
   }
 
   .thumbnail-container {
@@ -70,6 +73,10 @@ $product-description-height: 70px;
     margin-bottom: 1.563rem;
     overflow: hidden;
     background: $white;
+    border: 1/2  transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+
 
     &:hover,
     &:focus {
@@ -123,6 +130,7 @@ $product-description-height: 70px;
   .product-price-and-shipping {
     font-weight: 700;
     color: $gray-darker;
+    font-size: x-large;
     text-align: center;
 
     .discount-product {
@@ -143,6 +151,7 @@ $product-description-height: 70px;
   .thumbnail-top {
     position: relative;
     overflow: hidden;
+    background-color: #F5F5F5;
   }
 
   .highlighted-informations {
@@ -218,3 +227,4 @@ $product-description-height: 70px;
     }
   }
 }
+.

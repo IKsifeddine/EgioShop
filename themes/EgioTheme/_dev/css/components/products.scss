@@ -5,10 +5,9 @@
     margin: 0 auto;
   }
 }
-.my-image{
+.my-image {
   width: 200;
   height: 50px;
-
 }
 
 .product-price {
@@ -141,24 +140,21 @@
   width: 95px;
   align-items: center;
 }
-.reviewss{
+.reviewss {
   display: flex;
   gap: 7px;
   flex-direction: row;
   align-items: center;
 }
-.reviewss svg{
-  color: #EB824A;
+.reviewss svg {
+  color: #eb824a;
 }
 .reviewss p {
   color: #212121;
   margin: 0;
-
 }
 .add svg {
-
   color: $white;
-  
 }
 
 .heart-btn {
@@ -337,7 +333,7 @@
 .images-container .product-images > li.thumb-container .thumb {
   border-radius: 5px;
 }
-.product-variants>.product-variants-item select {
+.product-variants > .product-variants-item select {
   width: auto;
   padding-right: 1.875rem;
   background-color: #fff;
@@ -753,7 +749,7 @@
       font-weight: 500;
       text-transform: capitalize;
       word-break: normal;
-      background: #F5E8E1;
+      background: #f5e8e1;
 
       &:nth-of-type(even) {
         background: $gray-lighter;
@@ -1031,4 +1027,37 @@
       padding: 1rem;
     }
   }
+}
+
+.categorie-ref {
+  color: black;
+  padding-left: 35px;
+  width: 153px;
+  height: 20px;
+  font: normal normal 300 14px/16px Poppins;
+}
+.categorie-para {
+  width: 95px;
+  height: 19px;
+  font: normal normal normal 14px/18px Segoe UI;
+  color: #212121;
+  opacity: 1;
+}
+
+.product-price-and-shipping .price {
+  top: 1472px;
+  left: 580px;
+  width: 107px;
+  height: 47px;
+  /* UI Properties */
+  text-align: left;
+  letter-spacing: 0px;
+  color: #eb824a;
+  opacity: 1;
+  display: flex;
+}
+.categorie-my-container{
+  display: flex;
+  justify-content: space-around;
+  color: #eb824a;
 }

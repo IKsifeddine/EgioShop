@@ -48,6 +48,7 @@
             <a href="https://www.prestashop-project.org/" target="_blank" rel="noopener noreferrer nofollow">
               {l s='%copyright% MXPIECES.com %year% Tous droits réservés.' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
             </a>
+            <img src="/themes/EgioTheme/assets/img/payment.png"
           {/block}
         </p>
       </div>
